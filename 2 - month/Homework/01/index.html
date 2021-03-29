@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center; 
+            font-size: 45px; 
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgba(7, 168, 133, 0.801);
+            border:1px solid;
+            box-shadow: 0 23px 64px #06e7f9;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+        .input {
+            border: 1px solid rgb(5, 1, 252)!important;
+            border-radius: 5px!important;
+        }
+
+        .textDiv {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .inputDiv {
+            margin: 0 auto;
+            max-width: 700px;
+            width: 500px;
+            display: flex;
+            align-items: center;    
+            flex-wrap: wrap;
+        }
+
+        .inputDiv-2 {
+            max-width: 500px;
+        }
+
+        .col-2 {
+            max-width: 5rem;
+        }
+
+        .col-5 {
+            max-width: 15rem;
+        }
+
+        .ml-1 {
+            margin-left: 1rem;
+        }
+
+        .product {
+            font-weight: bold;
+            width: 30%;
+        }
+
+        .count {
+            width: 30%;
+        }
+
+        .price {
+            width: 30%;
+        }
+
+        .input-s:focus {
+            box-shadow: 0 5px 40px rgb(5, 1, 252);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="textDiv">
+            <h1 class="mt-5">Constructor</h1>
+        </div>
+        <div class="inputDiv">
+            <div class="input-group mb-3 mt-5">
+                <input type="number" class="form-control input-s" placeholder="Напиши m" style="border: 1px solid rgba(5, 1, 252, 0.486);">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+            </div>
+            <ul class="list-group mt-3">
+                <li class="list-group-item"></li>
+            </ul>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

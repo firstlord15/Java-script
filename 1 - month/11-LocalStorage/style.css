@@ -1,0 +1,40 @@
+.container-fluid {
+	background: linear-gradient(to left, #991f68ab, #80ffdba4);
+	border-radius: 5px;
+
+}
+
+body {
+	background: linear-gradient(to left, #0befda, #ff059b);
+}
+
+.mr-0 {
+	margin-right: 0;
+}
+
+.mr-1 {
+	margin-right: 0.25rem
+}
+
+.mr-2 {
+	margin-right: 0.5rem;
+}
+
+.mr-3 {
+    margin-right: 0.6rem;
+}
+
+.ml-auto {
+	display: block;
+	margin-left: auto;
+}
+
+.mr-auto {
+	display: block;
+	margin-right: auto;
+}
+
+.float-right {
+	float: right;
+}
+

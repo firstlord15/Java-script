@@ -1,0 +1,141 @@
+# значение в JS
+
+&& - implise(обозначает) and
+|| - implise(обозначает) or
+
+# If else 
+
+ if (переменная и значения) {
+    и тут задачи
+}
+
+# confirm, prompt 
+
+prompt - диалоговое окно с ответом пользователя
+confirm - просто оповищение с кнопками да и нет
+
+# переделанивание в строки в цифру
+если поставить(если в переменной a и b нет букв) + перед строками, 
+код будет видеть их как цифры(- не работает)
+
+# len, massiv
+arr.lenth - определяет кол-во элементов
+len(python) - lenth(JS) 
+выбирать по индексам почти как в python(exemple: arr[2])
+arr.push - добавляет(как append в python)
+arr.slice - удаление элементов в списке(как в python remove), 
+в slice удалить от 1 до 3 номера будет (1,3)
+
+# 05 - for-loop
+document.write("hello") - выводит слово hello, не в консоль, а в теле сайта
+document.write("Hello<br>") - <br> - как переход к новой строке, как /n
+
+// for - пример
+
+for (let i = 0; i < 10; i++) { 
+    / for - это цикл, 
+    / i < 10 - до десяти цикл работает 
+    / i++ - ознaчает i = i + 1
+    document.write(i+1+" Ratmir<br>")
+    / i+1+ - ознaчает i = i + 1 - перечисление по цифрам(от ноля и если + 1, то с 1)
+    / если i+1+ будет без, i+ вот таким, то начнется с 0, а не с 1
+}
+
+// простая математика
+
+i += 10 ознaчает i = i + 10
+
+// обращение к тегам через JS
+
+const tbody = document.querySelector("tbody") 
+/ так мы обращаемся к тегу <tbody> в html коде.
+
+// пример  таблицы через JS
+ const tbody = document.querySelector("tbody") / так мы обращаемся к тегу <tbody> в html коде.
+
+ for (let i = 0; i <= 10; i++) { // for - это цикл, i < 10 - до десети цикл работает; i++ - озночает i = i + 1
+    tbody.innerHTML += "<tr><td> "+i+" </td><td> "+i**2+" </td></tr>"
+    / innerHTML - типо писать код в Html код(в index.html)
+}
+
+# Таблица умножения Пифагора
+
+const tbody = document.querySelector("tbody") 
+
+for (let i = 1; i <= 10; i++) {
+    let tr = "<tr>"
+    for (let e = 1; e <= 10; e++){
+        tr += "<td>"+i*e+"</td>"
+    }
+    tbody.innerHTML += tr + "</tr>"
+}
+
+# while
+
+// id в document.querySelector
+
+/ если в коде Html есть у какого-то элемента id, 
+/ и его надо вызвать то мы пишем название id 
+
+
+button.onclick = () => {
+    // действие кода
+}
+
+button.onmouseover = () => {
+    // действие кода
+}
+//onclick - когда нажимают кнопку или ссылку
+// onmouseover - как :hover
+
+# style через JS
+
+переменная.style.названиеСтиля
+
+// getElementById - ввытаскиваем конкретный объект из кода HTML
+// body.innerHTML - записываем код Html в документ 
+
+# на уроке 8-JS
+
+const button = document.querySelectorAll("button") // all - объязательно 
+console.log(button)
+for (let i = 0; i < button[length]; i++) { // button[length] - кол-во button (lenth => len)
+    button[i].onclick = () => {// [index] - так можно использовать одну кнопку из одинаковых 2-3 и более
+        button[i].style.backgroundColor = "red"
+    }
+} 
+button.forEach(
+    (button)=>{
+        button.onclick = () => {
+            button.style.backgroundColor = "red"
+        }
+    }
+)
+двое с верху способ использовать все кнопки без ошибок(второй самый оптимальный)
+
+# 11 - localStorage
+
+!Array.isArray(guest)){ // Array.isArray - массив ли?,  ! - как частица не, типо, не является массивом.
+
+# 12-JSON
+
+// вид, описание.
+
+const json = "{'name':'Ratmir', 'surname':'Ashimov', 'stack':['Python', 'JavaScript', 'React', 'Bootstrap']}" - [1]
+
+JSON - это то что в ковычках[1], она передает информацию от пользователя к серверу, пишется так как указано выше.
+JSON - нужен для того чтобы информацию передовалась даже если в сервере используется другой язык, помимо не JS, к примеру Python
+
+// JSON - переобразование c объект или переменную в JSON формат
+
+console.log(JSON.stringify(obj))
+
+JSON.stringify(название переменной) -- можно преоброзовать 'obj', в формат JSON, пример выше
+
+// JSON - переобразование с JSON в объект или переменную
+
+const json = JSON.stringify(obj)
+console.log(JSON.parse(json)) 
+
+JSON.parse(json) - этот способ преобразования с JSON формата, в объект или переменную, пример выше.
+
